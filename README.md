@@ -1,11 +1,10 @@
 # Tensorflow Object Detection Walkthrough
-<p>This set of Notebooks provides a complete set of code to be able to train and leverage your own custom object detection model using the Tensorflow Object Detection API. This accompanies the Tensorflow Object Detection course on my <a href="https://www.youtube.com/c/nicholasrenotte">YouTube channel</a>. 
-<img src="">
+<p>This set of Notebooks provides a complete set of code to be able to train and leverage your own custom object detection model using the Tensorflow Object Detection API.
 <br/><br/>
-<b>Credit & Acknowledgments
-<p>The Jupyter Notebook Scripts were constructed with help from user nicknocknack. Additionally, thanks to user tzutalin for allow me to leverage the Label Image GUI, to annotate my images. 
+<b>Credit & Acknowledgments:
+<p>The Jupyter Notebook Scripts were constructed with help from user <a href="https://github.com/nicknochnack/">nicknocknack<a/>. Additionally, thanks to user <a href="https://github.com/tzutalin/labelImg">tzutalin</a> for allow me to leverage the Label Image GUI, to annotate my images. 
 <br />
-<p>Links to users GitHub accounts: <a href="https://github.com/nicknochnack/">nicknocknack<a/> and <a href="https://github.com/tzutalin/labelImg">tzutalin</a>
+<p>Link to nicknocknacks Tensorflow Object Detection course via <a href="https://www.youtube.com/c/nicholasrenotte">YouTube channel</a>, which allowed me to understand and follow steps on creating this model.
 <br/><br/>
 ## Steps
 <br />
