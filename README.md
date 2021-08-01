@@ -1,10 +1,15 @@
 # Tensorflow Object Detection Walkthrough
 <p>This set of Notebooks provides a complete set of code to be able to train and leverage your own custom object detection model using the Tensorflow Object Detection API. This accompanies the Tensorflow Object Detection course on my <a href="https://www.youtube.com/c/nicholasrenotte">YouTube channel</a>. 
 <img src="">
-
+<br/><br/>
+<b>Credit & Acknowledgments
+<p>The Jupyter Notebook Scripts were constructed with help from user nicknocknack. Additionally, thanks to user tzutalin for allow me to leverage the Label Image GUI, to annotate my images. 
+<br />
+<p>Links to users GitHub accounts: <a href="https://github.com/nicknochnack/">nicknocknack<a/> and <a href="https://github.com/tzutalin/labelImg">tzutalin</a>
+<br/><br/>
 ## Steps
 <br />
-<b>Step 1.</b> Clone this repository: https://github.com/nicknochnack/TFODCourse
+<b>Step 1.</b> Clone this repository: https://github.com/JMyers2292/Trauma_ObjectDetection
 <br/><br/>
 <b>Step 2.</b> Create a new virtual environment 
 <pre>
