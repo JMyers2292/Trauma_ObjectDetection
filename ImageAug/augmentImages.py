@@ -5,19 +5,19 @@ import glob
 import uuid
 
 
-def renameImages(folderPath):
+def renameImages(folderPath, img_label):
     os.chdir(folderPath)
     directory = os.listdir(path)
     for num, file_name in enumerate(directory):
-        new_name = str(num) + "_" + str(uuid.uuid1()) + ".jpg"
+        new_name = img_label + '_' + str(num + 1) + ".jpg"
         src = path + '\\' + file_name
         dst = path + '\\' + new_name
         os.rename(src, dst)
-        if num == len(directory):
-            return True
+        # if num == len(directory):
+        #     return True
+    print('\nAll Images In Dataset renamed...')
 
-
-def imageAugmentation(folderPath):
+def imageAugmentation(folderPath, img_label):
     # Initialise variables and paths
     images = []
     augmented = []
@@ -29,6 +29,7 @@ def imageAugmentation(folderPath):
     for image in images_path:
         img = cv2.imread(image)
         images.append(img)
+    print('Dataset Loaded...')
 
     # 2. Image Augmentation
     augmentation = iaa.Sequential([
@@ -56,7 +57,7 @@ def imageAugmentation(folderPath):
     ])
 
     augmented_images = augmentation(images=images)
-
+    print('Dataset Augmented...')
     # # 3. Show Images
     # for img in augmented_images:
     #     augmented.append(img)
@@ -65,9 +66,9 @@ def imageAugmentation(folderPath):
     #
 
     for i in range(0, len(augmented_images)):
-        aug_name = str(i + 1) + "_" + str(uuid.uuid1()) + ".jpg"
+        aug_name = img_label + '_' + str(i + 1) + "_" + str(uuid.uuid1()) + ".jpg"
         filenames.append(aug_name)
-
+    print('Augmented Files Named...\n')
     # for file in filenames:
     #     print(file)
 
@@ -82,12 +83,14 @@ def imageAugmentation(folderPath):
     print(f'Images in DIR After: {len(os.listdir(path))}')
 
 
-# Change to filepath containing images
-path = r'C:\Users\Jeremy\Desktop\AugmentedImages'
+########### Main ############
 
-# Rename images for ease of processing
-renameImages(path)
-if renameImages(path):
-    imageAugmentation(path)
-else:
-    imageAugmentation(path)
+# Change to filepath containing images
+path = r'D:\Jeremy\Desktop\Tensorflow\Trauma_ObjectDetection\Images\LacerationWound'
+
+# Change to specific label of class
+label = 'LacerationWound'
+
+# Augmenting and Renaming of Dataset
+imageAugmentation(path, label)
+renameImages(path, label)
