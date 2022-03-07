@@ -6,6 +6,8 @@
 <br />
 <p>Link to nicknocknacks Tensorflow Object Detection course via <a href="https://www.youtube.com/c/nicholasrenotte">YouTube channel</a>, which allowed me to understand and follow steps on creating this model.
 <br/><br/>
+<b>Report & Results:
+  <p>The overall results from this model are outlined in my <a href="https://www.dropbox.com/s/se65hq6fczp7r09/Trauma%20Object%20Detection%20Classifier%20Report.pdf?dl=0">Trauma Object Detection report<a/> I have created for this project.<br></p>
 ## Steps
 <br />
 <b>Step 1.</b> Clone this repository: https://github.com/JMyers2292/Trauma_ObjectDetection
